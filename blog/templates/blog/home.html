@@ -1,0 +1,39 @@
+
+
+{% extends 'blog/base.html'%}
+{% load static %}
+{% block content %}
+
+<div class=>
+<h2 class="text-white my-5  col-sm-5">Home Page</h2>
+<div class="container-fluid my-4">
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <img src="https://source.unsplash.com/1600x600/?computer" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1600x600/?laptop" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1600x600/?internet" class="d-block w-100" alt="...">
+    </div>
+     <div class="carousel-item">
+      <img src="https://source.unsplash.com/1600x600/?technology" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+  
+{% for post in posts %}
+<div class="jumbotron jumbotron-fluid jumbo-color">
+  <div class="container">
+    <h1 class="display-4 font-weight-bold">{{post.title}}</h1>
+    <p class="lead">{{post.desc}}</p>
+  </div>
+
+</div>
+
+{% endfor %}
+</div>
+
+
+{% endblock content %}

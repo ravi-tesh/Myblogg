@@ -1,0 +1,45 @@
+{% extends 'blog/base.html'%}
+{% load static %}
+{% block content %}
+
+<div class=>
+<h3 class="text-white col-sm-5">Contact Us</h3>
+
+<div class="container-fluid my-4">
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <img src="https://source.unsplash.com/1600x600/?phone" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1600x600/?laptop" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1600x600/?computer" class="d-block w-100" alt="...">
+    </div>
+  </div>
+
+</div>
+<form>
+<div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name"  placeholder="Enter your name">
+  </div>
+   <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email"  placeholder="enter your email">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone numbers</label>
+    <input type="phone" class="form-control" id="phone"  placeholder="enter your phone">
+  </div>
+  
+  <div class="form-group">
+    <label for="desc">Tell me the reason you contacted me... </label>
+    <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit</button>
+
+</form>
+</div>
+
+{% endblock content %}
